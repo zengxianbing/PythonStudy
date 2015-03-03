@@ -1,0 +1,5 @@
+__author__ = 'xianbing'
+import  mymodule
+mymodule.sayhi()
+
+print('Version',mymodule.version)

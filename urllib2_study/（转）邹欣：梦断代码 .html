@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+
+    <title>
+    （转）邹欣：梦断代码 读后感 (I) 驱动和责任(2) 时间和交流(3) 远虑和近忧
+</title>
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+    
+    <script >var _head_start = new Date();</script>
+    <script src="http://s.doubanio.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js"></script>
+    <script src="http://s.doubanio.com/f/shire/6072cbd9e3d56db50f819890f57164950110117c/js/douban.js"></script>
+    <link href="http://s.doubanio.com/f/shire/0871af7d2592184d4baf45938ff09da21aa53ccd/css/douban.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    
+        
+    .ui-tooltip { width: 270px }
+    .note img { max-width:590px; }
+    .tabs{font-size:0;letter-spacing:-0.31em;*letter-spacing:normal;word-spacing:-0.43em}.tabs a{display:inline-block;*display:inline;zoom:1;padding:1px 8px;margin-right:5px}.tabs a:link,.tabs a:visited,.tabs a:hover,.tabs a:active{font-size:12px;line-height:1.2;letter-spacing:normal;word-spacing:normal}.tabs a:hover,.tabs a:active{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.tabs a.on:link,.tabs a.on:visited,.tabs a.on:hover,.tabs a.on:active{color:#fff;background:#83bf73;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.tabs{margin:40px 0 10px;padding-bottom:8px;border-bottom:1px solid #e6e6e6}.list,.list .content{overflow:hidden;zoom:1}.list .pic{float:left;margin-right:12px}.list p{margin:8px 0 0 0;background:#f9f9f9;padding:8px}.list .pubtime{position:absolute;top:10px;right:0;color:#999}.list .pic img{width:24px;height:24px}.list ul{margin-top:-15px}.list li{position:relative;padding-top:10px;margin-top:10px;border-top:1px dashed #e6e6e6;overflow:hidden;color:#666}.topic-fav-list .content{margin-top:4px;width:70%}.topic-fav-list .pubtime{top:14px}.topic-rec-list .pubtime a:link,.topic-rec-list .pubtime a:visited{color:#666}.topic-rec-list .pubtime a:hover,.topic-rec-list .pubtime a:active{color:#fff}.topic-rec-list p{padding:0}.topic-rec-list p a{display:block;background:#f9f9f9;padding:8px}.topic-rec-list p a:link,.topic-rec-list p a:visited{color:#666}.topic-rec-list p a:hover,.topic-rec-list p a:active{background-color:#f6f6f6;color:#666}
+
+    </style>
+    
+    <meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.douban.com/note/482829682/">
+    <link type="text/css" href="http://s.doubanio.com/f/shire/d1faa0a30ffb71000e12b67d560940566eb51bac/css/lib/jquery.ui.tooltip.css" rel="stylesheet"/>
+    <link type="text/css" href="http://s.doubanio.com/f/sns/d217844be1a2a6be9163d677deafa991e5ea8d17/css/sns/tag.css" rel="stylesheet"/>
+    <script type="text/javascript" src="http://s.doubanio.com/f/shire/38311a6c074fc29d6900856bf39a433061b98d6e/js/do.js" data-cfg-autoload="false"></script>
+    <script type="text/javascript" src="http://s.doubanio.com/f/shire/1252f600af97640484ef0385c4dc011ed38cc003/js/lib/jquery.ui.min.js"></script>
+    <script type="text/javascript" src="http://s.doubanio.com/f/shire/b25c20b18198fe069cd80d64f4ca614e20b419cb/js/lib/jquery.ui.tooltip.js"></script>
+
+    <link rel="stylesheet" href="http://s.doubanio.com/misc/mixed_static/77b5eb4aac4ba083.css">
+    <script></script>
+
+    <link rel="shortcut icon" href="http://img3.douban.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  
+    <script type="text/javascript">var _body_start = new Date();</script>
+    
+   
+
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="http://www.douban.com/accounts/login?source=main" class="nav-login" rel="nofollow">登录</a>
+      <a href="http://www.douban.com/accounts/register?source=main" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="http://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="slogan">汇集一亿人的生活趣味</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="http://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">Download on the App Store</a>
+                <a href="http://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Download Android</a>
+            </div>
+        </div>
+        <div id="doubanapp-tip">
+            <a href="http://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">新版发布，可以刷广播啦</a>
+            <a href="javascript: void 0;" class="tip-close">×</a>
+        </div>
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="on">
+            <a href="http://www.douban.com/" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-main&#34;,&#34;uid&#34;:&#34;0&#34;}">豆瓣</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://book.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-book&#34;,&#34;uid&#34;:&#34;0&#34;}">读书</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://movie.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-movie&#34;,&#34;uid&#34;:&#34;0&#34;}">电影</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://music.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-music&#34;,&#34;uid&#34;:&#34;0&#34;}">音乐</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://www.douban.com/location/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-location&#34;,&#34;uid&#34;:&#34;0&#34;}">同城</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://www.douban.com/group/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-group&#34;,&#34;uid&#34;:&#34;0&#34;}">小组</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-read&#34;,&#34;uid&#34;:&#34;0&#34;}">阅读</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://douban.fm/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-fm&#34;,&#34;uid&#34;:&#34;0&#34;}">豆瓣FM</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-commodity&#34;,&#34;uid&#34;:&#34;0&#34;}">东西</a>
+            </li>
+          
+            <li>
+              <a href="#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tr><td><a href="http://9.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-9&#34;,&#34;uid&#34;:&#34;0&#34;}">九点</a></td></tr>
+                    
+                    <tr><td><a href="http://alphatown.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-town&#34;,&#34;uid&#34;:&#34;0&#34;}">阿尔法城</a></td></tr>
+                    
+                    <tr><td><a href="http://www.douban.com/mobile/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-mobile&#34;,&#34;uid&#34;:&#34;0&#34;}">移动应用</a></td></tr>
+                </table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+   
+    
+
+
+
+
+
+
+
+<div id="db-nav-sns" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <div class="nav-search">
+        <form action="http://www.douban.com/search" method="get">
+          <fieldset>
+            <legend>搜索：</legend>
+            <label for="inp-query">搜索你感兴趣的内容和人...</label>
+            <div class="inp">
+              <input type="hidden" name="source" value="suggest">
+              <input id="inp-query" name="q" size="22" title="搜索搜索你感兴趣的内容和人..." maxlength="60" autocomplete="off"  value="">
+            </div>
+            <div class="inp-btn"><input type="submit" value="搜索"></div>
+          </fieldset>
+        </form>
+      </div>
+  
+      <div class="nav-logo">
+        <a href="http://www.douban.com">豆瓣社区</a>
+      </div>
+  
+      <div class="nav-items">
+        <ul>
+          <li><a href="http://www.douban.com/">首页</a></li>
+          <li><a href="http://www.douban.com/explore/">浏览发现</a></li>
+          <li><a href="http://thing.douban.com">事情</a></li>
+          <li><a href="http://www.douban.com/online/">线上活动</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <div id="wrapper">
+        
+
+        
+<div id="content">
+    
+
+    <div class="grid-16-8 clearfix">
+        
+        
+        <div class="article">
+               
+    
+    
+    
+    <div id="reg-up">
+        <a href="http://www.douban.com/accounts/register" data-source=note data-key="regpop" data-cookie="1" data-expired="3600000" data-width="400" data-height="340" class="btn-reg lnk-show-reg">快速注册</a>
+    </div>
+    
+
+    
+    
+    <div id="note-482829682">
+
+    
+    
+    
+        <div class="note-header note-header-container">
+        <h1>（转）邹欣：梦断代码 读后感 (I) 驱动和责任(2) 时间和交流(3) 远虑和近忧</h1>
+
+    
+    <div>
+        <a href="http://www.douban.com/people/yeka52/"><img class="note_author_avatar" width="24" height="24" src="http://img3.douban.com/icon/u1450975-15.jpg" alt="叶卡"></a>
+        <a href="http://www.douban.com/people/yeka52/" class="note-author">叶卡</a>
+        <span class="pl">2015-02-01 19:49:40</span>
+    </div>
+    </div>
+
+
+    <div class="note" id="note_482829682_short" style="display:none;"></div><div id="note_482829682_full" ><div class="note" id="link-report">（<a rel="nofollow" href="http://book.douban.com/subject/25965995/" target="_blank">邹欣和他写的书</a>）<br><br>原文出处：<a rel="nofollow" href="http://yishan.cc/blogs/xin/archive/2008/11/16/i.aspx" target="_blank">http://yishan.cc/blogs/xin/archive/2008/11/16/i.aspx</a><br>&nbsp;<br><br>几个星期前，我给《现代软件工程》课的每一个团队都发了一本 《Dreaming In Code》的中文版《梦断代码》，要求写读后感。这本书讲了这样的故事：一群很有经验的代码牛人在先进软件开发模式的指导下，没有资金压力，在更多大牛的带领下，原计划用一到两年的时间开发出一个备受期待的个人信息管理软件(PIM)，后来花了七年时间才完成这一创举，但是已经无人喝彩。我是9月份读的英文版，后来又翻阅了中文版，也有一些感想如下。<br><br>&nbsp;==1-驱动和责任==<br>（后来，这样的感想似乎被邹欣老师写进《构建之法》的这一节啦：<a rel="nofollow" href="http://book.douban.com/reading/33852113/" target="_blank">猪、鸡和鹦鹉的故事</a>）<br><br>Dreaming in Code: Two Dozen Programmers, Three Years, 4,732 Bugs, and One Quest for Transcendent Software <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="cc"><table><tr><td><img src="http://img3.douban.com/view/note/large/public/p24866744.jpg" alt=""/></td></tr><tr><td align='center' class="wr pl"></td></tr></table></div><br><div class="cc"><table><tr><td><img src="http://img5.douban.com/view/note/large/public/p24866749.jpg" alt=""/></td></tr><tr><td align='center' class="wr pl"></td></tr></table></div><br><br><br><br>1）驱动<br>到底是什么驱动程序员和管理人员，测试人员长年累月投入到一个软件项目中去？<br><br>有理论认为，传统的软件公司用工资，职位，绩效考核等让一群经过面试和培训的人在严格定义的流程下一起工作（大教堂/Cathedral模式）。其实，用开源，社区，共享的模式会更好（集市/Bazaar模式）也许更好。正如在第26页所说的 [所有页码都是指英文版]<br><br>... it maps an alternate universe for programming in which time is simply less important because the work is cooperative rather than corporate, the workers are all volunteers, and the motivation is fun and ego, not financial reward.  [p26]<br><br>这理论听起来很好，但是我想起了两个故事：<br><br>1) 美国的一个肥皂剧Seinfield里有一集，讲了一个混混Kramer 热心地加入了一家公司，义务打工，起初他的口头幽默和热情感动了团队，领导委以重任，不料Kramer 根本没法儿把事情做好。最后领导只好找他谈话，Kramer 承认自己不行，他说- 但是俺是义务给你们打工的！领导说，对，这就是让我们为难的地方。。。 <br>项目中来了一位“义务打工的”，照理说，对项目只有帮助，而且别人是“义务”，你怎么好意思把别人赶走？<br><br>2) 我以前在西雅图的时候参加过一个非营利组织，成员们都是有热情为社区服务，而且义务付出。但是后来有些成员就逐渐找不到了，一些事情也不了了之。 由于大家都是义务贡献，你没法如何要求别人。<br><br>在Chandler 项目中，Andy Hertzfeld 就是这样一个义务作贡献的大牛。但是他也遇到了同样的&quot;志愿者问题&quot; -<br><br>They don't know whether to count on you or not. And because you're not getting paid, there's lack of control. [p167]<br><br>后来这位Hertzfeld 也拍拍屁股走人了，大家可以为 fun 和 Ego 一起工作，但是如果fun  和 ego 都得不到满足，那motivation 也会急剧下降。 <br><br>2）责任 <br><br>和驱动紧密相关的，是责任 - Accountability.<br><br>在 Hard Drive 这本书中，讲了这样的故事 - 由于Windows 一再拖延，BillG 最后跟 SteveB 说 - 如果今年下雪之前Windows 还没出来，你就别在这儿干了。 书中没有详细讲 SteveB 回头来又和他的团队讲了什么，但是第二天一个员工背着睡袋进驻了办公室。<br><br>很多年以后，Windows Vista 也经历了很长的拖延，在又一次宣布拖延之后，人们发现 Windows 团队中一个赫赫有名的 VP 已经卷起铺盖走了。<br><br>我们回过头来看，在Chandler 项目长达7年的拖延中，有没有发生过各位项目管理者引咎辞职的事？ 好像没有。 [有不少人离开，但是没有人直接为项目延期负责]  既然我上一次拖延没有什么惩罚，那我为什么一定要拼了老命要避免下一次拖延呢？<br><br>在传统意义上的软件公司，如果项目延期，那项目原计划的收入就拿不到，拖延的时间再长一些，员工就得走人，否则整个公司都被拖垮了。在“集市”，社区，共享的模式下，大家都是义务，大家都在玩票，大家都做贡献，但是对最终项目不直接负责任，那到底谁负直接责任呢？<br><br>在《移山之道》 中，我讲了下面的例子：<br><br>阿超：我今天在“顶球”网吧看到大牛他爹在下棋，围观者支招的不少，有的说上马，有的说拱卒，有的说出车。大牛他爹一会儿招法就乱了，眼看局势不灵了，围观者一哄而散，老崔后来也没法，只好认输了。<br><br>一个围棋国手在一次重要的对局后，听到旁观者对棋局的进程有很多不同的看法，他也没有过多争辩，只是说：“无责任的旁观者和有重大责任的当局者的看法自然是不一样的”。<br><br>无责任的旁观者在支招后，如果不灵，他可以面不改色地继续支招，甚至可以给另一位对局者支招，不管最后谁输谁赢，旁观者随时都能安心地离开，回家吃饭。有重大责任的当局者在走了损招或败招之后，他很可能就要认输下台，丢掉比赛的奖金和头衔。<br><br>我在清华大学的这一次《现代软件工程》课，我发现有些学生好像不是特别投入，后来了解到，由于申请学校用的GPA只计算前三年的成绩，第四学年课程的分数就和申请学校没有什么关系了，所以比较“鸡肋”。有一个同学说，如果这门课是在第三学年，那许多同学们会非常计较分数，排名。现在，只要能过就可以了。怪不得一两个项目中出现了 “花最少的努力，能过就行” 的心态。<br><br>一个软件团队可以制定出动人的远景/Vision， 但是如果大家没有搞清楚驱动项目的各种因素和每个角色应付的责任，那Vision只是一句话而已。<br><br><br>==2-时间和交流==<br><br>时间和交流：时间对每一个人都是公平的，对每一个软件项目也是这样。<br><br>nearly all software projects require only 1/6 of their time for the writing of code and fully 1/2 of their schedule for testing and fixing bugs.  But it was rare project manager who actually planned to allocate developers&quot; time according to such a breakdown. [p17]<br><br>书中援引理论家的话说，最高效的软件团队规模应该是一个人，因为这样就不用交流了。 随着人数的增加，依赖关系的复杂，新手，老手员工之间的不同步，交流的成本会随着几何级数增加。在这里插播一个有奖竟猜：<br><br>当Windows 研发团队在开发Windows 2000的时候，团队内部每天有多少封e-mail 交流？ <br>a) 90 <br>b) 900 <br>c) 9,000 <br>d) 90,000<br><br>对每一个团队成员来说，他/她不仅要完成手头工作，还有报告自己的进展（通过email 或其他形式），回答别人的问题，了解其他人的进展。每个人的时间都是有限的，那怎么能保证我们在应付所有的交流/沟通之后，能有时间完成“手头工作”？<br><br>一个微软的同事前两天跟我说，他们最近没写什么代码，集中精力做“planning” 去了，大家写了很多PowerPoint，改了很多PowerPoint。然后给VP, General Manger 做了两轮汇报，然后根据VP们的意见再修改，再汇报。。。 PowerPoint 的风格变得非常专业和花哨，但是他们仍然没有完成Planning，进入实质开发阶段。华丽的 PowerPoint 中的每一个条目，也需要花PM 很多时间才能写明白，让VP 了解，同时也要花一线dev/test 很多时间才能实现，但是VP，PM 和 Dev/Test 面对同一个条目，他们心里想的是同一回事么？<br><br>外部交流<br><br>在Chandler 项目中，幸运的是，他们没有这么多VP 要汇报 （真正的VP  -  Al Gore 只露了一个小脸），但是我注意到他们用于交流的时间也非常多。例如<br><br>Every day the developers shared a chat room via Internet Relay Chat (IRC) [p139]<br><br>1 internal and  4 external email list set up. <br><br>blogs, wiki&quot;s...<br><br>这些都是花时间的！我看到团队成员还要回复素未谋面的爱好者的各种问题（例如质问他们为何不用某某框架，等等），当然这种透明度也满足了很多人的好奇心，开源，社区的优点么。。。 另一方面，项目管理人员发现他们面对着大量的任务没有时间完成。就像第一章 Doomed 的开篇就说到：<br><br>John is doomed,  he has 500 hours of work scheduled between now and the next release... [p11]<br><br>团队中其他人也好不到哪里去。那在这种情况下，是花时间继续参加各种讨论，blog，提供Transparency，满足大众的好奇心，还是集中精力把自己“手头的事” 搞定？我从书中没有看到经验丰富的管理人员这时候采取了什么措施。事实上，在产品发布之后，没有证据表明，那些在IRC，Email，BBS 上发了很多议论的爱好者未必真正下载并使用你根据他们的意见开发出来的软件。那这么忙于交流是为嘛?!<br><br>事实上，这么多交流和信息并不能帮助人们回答一个最重要的问题 -<br><br>What had each programmer accomplished in the past week, and what task was next? [p141]<br><br>我的故事 - 在MS Outlook97 发布之后，网上对这个V1 版本有很多意见，也有很多期待。 其中很多用户在 NewsGroup (新闻组) BBS 上发表了强烈的建议，要求Outlook 支持直接阅读 NewsGroup/BBS 的内容，当时只有Outlook Express 有这个功能。Outlook 的开发成员一度认为用户的要求太强烈了，如果我们没有这个功能，可能V2就会很不受欢迎 （几个dev 已经做了一个初始版本）。 但是大家仔细分析后发现，在BBS上强烈发言的，就是那么几个人，因为他们老用BBS，因此他们的需求特别强烈，并且好像声势浩大，但是别的大部分用户根本就不上BBS，因此也没机会表达意见。所以Outlook 决定不做 NewsGroup 的功能，一直到现在。<br><br>内部的交流<br><br>除了外部的交流，还有内部的交流，随着一个人经验的增多，会有很多其他人来找你，为大大小小的事咨询你的意见。然而你自己也有无数的任务要完成，怎么办？微软的员工对这种情况也不陌生，微软团队允许一些人 “Go Dark”，他们可以关起门自己干活，敲门不答应，不回答一般的email，不参加会议等等。<br><br>据说很早以前，BillG 把开发OS/2 API 的任务交给了一个牛人，这位前辈接受任务之后，并没有开新闻发布会，建立email distribution list, 或者QQ 群，而是挂了一个和下面类似的牌子在办公室门外，把门一关，一个人闷头开发去了。<br><br>我们知道交流很重要，但是软件不是在QQ 群中交流出来的（当然，有人在QQ 群中交流别人写好的软件），而是一些人一行行写出来的。 这个过程需要集中注意力，避免打扰。在一个 “集市” 风格， “共享” 的开发氛围中，如何能保证关起门来开发呢？<br><br>//答案是 d)<br><br>==3-远虑和近忧==<br><br>Kapor 的团队看起来非常重视“远景”， 他们似乎没有近忧 - 这也许是致命的。<br><br>他们对于软件的基本架构/infrastructure 非常关心，例如对于存储系统，它们提出了下列需求：[p103]<br><br>it has to make life easy for the Python programmers<br>it has to operate efficiently over a network<br>it needs to be able to handle very large individual date items and very large numbers of items<br>it has to be reliable, using database &quot;transactions.&quot;<br>it has to support searching and indexing<br>[0] User experience  //Kapor 后来加上去的，似乎不相干的一条远景。<br>后来对于Data Storage，又有如下构想：[p109]<br><br>Provide programmers with as revolutionary a data model as users<br>data can live anywhere.<br>Data is safe from corruption.<br>Data is quick to get.<br>Data can be large.<br>非常令人佩服的远虑。 如果一个项目能同时实现其中3个目标，就已经能实用并吸引客户，开始赚钱了。 但是Chandler 项目的同志们不满足于只实现两三个，他们要实现全部5个梦想。<br><br>一群牛人在 “没有近忧，只有远虑” 的条件下讨论问题，最后只能议而不决。 在一次次延续到深夜的讨论中，有人感慨 - &quot;How is this night different from all other nights?&quot; //[p110]<br><br>没有近忧，或者说不用为近忧而负责 - “我们这个月的目标没完成不要紧，但是我们的远景一定要讨论好”。 导致了项目不能收敛 - 一个项目的一个里程碑中，不确定的事情应该越来越少，bug 也越来越少，直到产品发布。<br><br>Making firm technical choices was hard in the absence of a settled design, and settling on a design was hard in the absence of a technical roadmap. [p150 - 151]<br><br>正因为大家没有近忧，所以大家可以继续等待，设计要等技术决定后才好做，而技术的选择要等设计决定后才好开始。就这样，大家折腾到2005年的时候，他们才从高瞻远睹的远虑的云端中下来，有了第一个脚踏实地的计划：<br><br>But for the first time, at least, they could see they had a plan grounded in reality, rooted in estimates that ... [p232]<br><br>Kapor 毕竟是聪明人，很多年以后，他说到了教训：<br><br>We've consistently overinvested in infrastructure and design... [p342]<br><br>收敛的另一个特点是 - 做过了的决定，就要执行，不要反复。事实上，Chandler 团队在很多决定上摇摆不定。 架构师Hertzfeld 度假回来，发现他带领其他同事奋战一个夏天得到的 Document Architecture 被扔到一边，原来 Kapor 决定 “We'll have to come back and realign things”  [p168]。 如果你是做义务劳动的 Hertzfeld，你还能做下去么？<br><br>回到 “远景”， 我相信几乎没有合适的解决方案能满足“远景” 中的所有要求，很难找到 “多快好省” 的解决方案（书中提到 fast|cheap|good 不能兼得，这也是MSF 中 time | resource | feature 三个元素的矛盾）。但是往往存在若干方案，从不同的角度逼近最优，但是有各自令人讨厌的缺点。我们能否有智慧来选择这样一个方案，把近忧，远虑都慢慢解决？<br><br>我自己在微软正在做一个创新项目，前几天一位加入这个项目不久的优秀的开发人员对我说，我们去年设计的数据库问题太多了，如果我们早就像我这样设计，估计会好很多。我不是数据库的专家，我只能对他说，如果我们当时坚持要做到今天这样才发布，这个项目也许就做不到今天了。<br><br>换句话说，正是因为早期那些不完美，但是及时的设计，让后来者有挑剔这些不完美的奢侈机会。<br><br>我们每个人在使用这些不完美的软件（Windows, Outlook, 甚至Linux）的时候，都应该感谢当初设计者做出了正确决定，而那些坚持完美设计远景的项目，它们都到哪去了？<br>&nbsp;</div></div>
+
+    <br>
+
+            
+    
+
+    <div id="sep"></div>
+    <div id="note_482829682_footer" class="note-ft" >
+        <div class="note_upper_footer">
+          
+
+
+
+
+
+
+
+
+          <span class="gtleft">
+              &nbsp;&nbsp;
+          </span>
+
+        </div>
+
+
+        
+        <div class="sns-bar">
+
+            
+
+
+
+            <div class="sns-bar-rec">
+                    
+                    <script>
+                    DoubanShareMenuList = [ 'sina', 'qzone', 'tx', 'renren', 'qqim' ];
+                    </script>
+                    
+    
+    <span class="rec" id="Note-482829682">
+        <a href= "#" data-type="Note" data-url="http://www.douban.com/note/482829682/" data-desc="" data-title="【（转）邹欣：梦断代码 读后感 (I) 驱动和责任(2) 时间和交流(3) 远虑和近忧】（邹欣和他写的书） 原文出处：http://yishan.cc/blogs/xin/archive/2008/11/16/i.aspx 几个星期前，我给《现代软件工程》课的每一个团队都发了一本 《Dreaming In Code》的中文版《梦断代码》，要求写读后感。这..." data-pic="http://img3.douban.com/view/note/large/public/p24866744.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </span>
+    <script>
+    if (!window.DoubanShareMenuList) {
+        window.DoubanShareMenuList = [];
+    }
+    var __cache_url = __cache_url || {};
+    (function(u){
+        if(__cache_url[u]) return;
+        __cache_url[u] = true;
+        window.DoubanShareIcons = 'http://s.doubanio.com/f/shire/3c8da10d6081bd1b2d13d3733b2ac201535c5d0f/pics/ic_shares2.png';
+        var initShareButton = function() {
+          $.ajax({url:u,dataType:'script',cache:true});
+        };
+        if (typeof Do == 'function' && 'ready' in Do) {
+          Do('http://s.doubanio.com/f/shire/ae32cb8310a09ba836b958b79d2cd1e706db2fed/css/ui/dialog.css',
+            'http://s.doubanio.com/f/shire/4b3bad5e25de78678d700dd5353570dce3e6bbcc/js/ui/dialog.js',
+            initShareButton);
+        } else if(typeof Douban == 'object' && 'loader' in Douban) {
+          Douban.loader.batch(
+            'http://s.doubanio.com/f/shire/ae32cb8310a09ba836b958b79d2cd1e706db2fed/css/ui/dialog.css',
+            'http://s.doubanio.com/f/shire/4b3bad5e25de78678d700dd5353570dce3e6bbcc/js/ui/dialog.js'
+          ).done(initShareButton);
+        }
+    })('http://s.doubanio.com/f/shire/209f47102831e362802b71939c5da9801e8e6697/js/lib/sharebutton.js');
+    </script>
+
+                    
+                    
+
+
+
+
+
+
+
+
+    <div class="rec-sec">
+
+    <span class="rec">
+
+<a data-user_id="0" href="https://www.douban.com/accounts/register?reason=collect" share-id="482829682" data-mode="plain" data-name="（转）邹欣：梦断代码 读后感 (I) 驱动..." data-type="com.douban.people" data-desc="（邹欣和他写的书） 原文出处：http://yishan.cc/blogs/xin/archive/2008/11/16/i.aspx 几个星期前，我给《现代软件工程》课的每一个团队都发了一本 《Dreaming In Code》的中文版《梦断代码..." data-href="http://www.douban.com/note/482829682/" data-image="http://img3.douban.com/view/note/small/public/p24866744.jpg" data-properties="{&#34;href&#34;:&#34;http:\/\/www.douban.com\/people\/yeka52\/&#34;,&#34;name&#34;:&#34;叶卡&#34;,&#34;uid&#34;:&#34;1450975&#34;}" data-redir="http://www.douban.com/static/dshare_proxy.html" data-text="" data-apikey="" data-curl="" data-count="10" data-object_kind="1015" data-object_id="482829682" data-target_type="rec" data-target_action="0" data-action_props="{&#34;note_url&#34;:&#34;http:\/\/www.douban.com\/note\/482829682\/&#34;,&#34;note_title&#34;:&#34;（转）邹欣：梦断代码 读后感 (I) 驱动...&#34;,&#34;author_name&#34;:&#34;叶卡&#34;}" data-btn_text="推荐" data-heading="推荐到豆瓣" data-sanity_key="_d8580" class="j a_show_login lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+            </div>
+
+            <div class="sns-bar-fav ">
+                
+
+
+
+
+
+
+<span class="fav-num" data-tid="482829682" data-tkind="1015">
+      <a href="#">2人</a>
+  喜欢
+</span>
+
+    <a class="fav-add btn-fav j a_show_login" title="标为喜欢？" href="http://www.douban.com/accounts/register?reason=like" data-tid="482829682" data-tkind="1015">喜欢</a>
+
+
+
+
+
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <div class="clear" ></div>
+
+    <div class="tabs" id='reviews'>
+      <a href="http://www.douban.com/note/482829682/#sep" class=on>回应</a>
+      <a href="http://www.douban.com/note/482829682/?type=rec#sep" >推荐</a>
+      <a href="http://www.douban.com/note/482829682/?type=like#sep" >喜欢</a>
+    </div>
+
+    <div class="">
+          
+
+
+
+
+
+
+
+
+
+
+<div id="comments" class="">
+
+
+
+
+
+<div id="last"></div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <br/><span class="pl2" align="right"><a class="j a_show_login" href="https://www.douban.com/accounts/register?reason=comment">&gt; 我来回应</a></span>
+
+
+ 
+
+ 
+
+    
+    
+    
+
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+Do(function(){
+  $('#comments').find('.comment-item').hover(function(){$(this).addClass('over');}, function(){$(this).removeClass('over');});
+  $('.reply-quote .toggle-reply').click(function(e) {
+    e.preventDefault();
+    var el = $(this);
+    el.prevAll('span').toggle();
+    el.find('span').toggle();
+  });
+});
+</script>
+
+
+
+
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+        </div>
+        <div class="aside">
+                
+    
+
+
+
+
+
+
+<div class="mod mod-usercard"> 
+  <div class="pic">
+      <a href="http://www.douban.com/people/yeka52/"><img src="http://img3.douban.com/icon/u1450975-15.jpg" alt="叶卡" width="48" height="48"/></a>
+  </div>
+  <div class="content">
+    <a href="http://www.douban.com/people/yeka52/">叶卡</a>
+    <p>人生最可悲的事情，莫过于胸怀大志，却又虚度光阴。戒急用缓，行稳致远...</p>
+    <div class="ft">
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+
+
+    
+    
+    
+        <div class="mod">
+            
+    <h2>
+        叶卡的最新日记
+            &nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://www.douban.com/people/yeka52/notes" target="_self">全部</a>
+                ) </span>
+    </h2>
+
+            <ul class="note-list">
+                  <li>
+                    <a title="（转）我们正进入另一个黑暗和无知的时代" href="http://www.douban.com/note/482528203/">（转）我们正进入另一个黑暗和无知的时代</a>
+                    
+                      <span>&nbsp;(19人喜欢)</span>
+                  </li>
+                  <li>
+                    <a title="（转）弱关系有力量" href="http://www.douban.com/note/477268977/">（转）弱关系有力量</a>
+                    
+                      <span>&nbsp;(2人喜欢)</span>
+                  </li>
+                  <li>
+                    <a title="（转）为什么你读了1000篇有关如何改变的文章却从未改变？" href="http://www.douban.com/note/476837374/">（转）为什么你读了1000篇有关如何改变的文章却从未改变？</a>
+                    
+                      <span>&nbsp;(5人喜欢)</span>
+                  </li>
+                  <li>
+                    <a title="（转）邹欣：你的工作就是最好的面试" href="http://www.douban.com/note/476651092/">（转）邹欣：你的工作就是最好的面试</a>
+                    
+                      <span>&nbsp;(7人喜欢)</span>
+                  </li>
+                  <li>
+                    <a title="（转）纸笔是孤独的止痛剂" href="http://www.douban.com/note/476649496/">（转）纸笔是孤独的止痛剂</a>
+                    
+                      <span>&nbsp;(6人喜欢)</span>
+                  </li>
+            </ul>
+        </div>
+
+    
+    
+    <script>
+        $(document).ready(function(){
+            var tag_box = $('.author-tags'),
+                a_more_tag = tag_box.parent().find('h2 .pl'),
+                show_more_tags = $('<a class="more-tags" href="javascript: void 0;">...</a>')
+                people_tags = $('.people_tags'),
+                last_shown_tag = $(),
+                people_tags_more = $('.people_tags_more')
+
+            function showTags() {
+                people_tags_more.show();
+                a_more_tag.hide();
+                show_more_tags.hide();
+            };
+
+            a_more_tag.hide();
+
+            $('span', '.people_tags_more').each(function(i, tag) {
+                tag = $(tag)
+                tag.appendTo(people_tags)
+                if (people_tags.height() > 68) {
+                    people_tags_more.prepend(tag)
+                    people_tags_more.prepend(last_shown_tag)
+                    show_more_tags.appendTo(people_tags)
+                    a_more_tag.show()
+                    return false
+                }
+                last_shown_tag = tag
+            })
+            tag_box.addClass('visible')
+            a_more_tag.click(function() {
+                showTags();
+                return false;
+            });
+            show_more_tags.click(function() {
+                showTags();
+                return false;
+            });
+            $('#note_tooltip').tooltip();
+        })
+    </script>
+
+    
+
+    <div class="mod">
+        
+    <h2>
+        叶卡的日记标签
+            &nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+            <span class="pl">&nbsp;(
+                
+                    <a href="#" target="_self">全部</a>
+                ) </span>
+    </h2>
+
+        <div class="author-tags">
+            <div class="people_tags">
+            </div>
+            <div class="people_tags_more">
+                    <span><a href="http://www.douban.com/note/tags/%E5%87%BA%E7%89%88?people=yeka52">出版 1</a></span>
+                    <span><a href="http://www.douban.com/note/tags/%E7%BC%96%E8%BE%91?people=yeka52">编辑 1</a></span>
+                    <span><a href="http://www.douban.com/note/tags/%E6%96%B0%E7%BB%8F%E6%B5%8E?people=yeka52">新经济 1</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- douban ad begin -->
+    <div id="dale_personal_note_middle_right" style="margin-bottom: 20px;"></div>
+    <!-- douban ad end -->
+
+<div class="mod">
+    
+    <div class="hd">
+        
+    <h2>
+        推荐这篇日记的豆列
+            &nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://www.douban.com/note/482829682/doulists" target="_self">全部</a>
+                ) </span>
+    </h2>
+
+    </div>
+    <div class="indent">
+        <ul class="bs">
+            <li><a href="http://www.douban.com/doulist/20831657/">涨知识开眼界</a>
+                  <span class="pl">&nbsp;(2177人关注)</span>
+            </li>
+            <li><a href="http://www.douban.com/doulist/37029996/">涨知识</a>
+                  <span class="pl">&nbsp;(94人关注)</span>
+            </li>
+            <li><a href="http://www.douban.com/doulist/22757038/">叶卡的日记</a>
+            </li>
+            <li><a href="http://www.douban.com/doulist/37184071/">知识</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+  <a href="http://moment.douban.com/app/?source=note_ad"><img src="http://t.douban.com/img/files/file-1411453310.png"/></a>
+
+        </div>
+        <div class="extra">
+            
+    
+<!-- douban ad begin -->
+<div id="dale_personal_note_bottom_super_banner"></div>
+<script type="text/javascript">
+    (function (global) {
+        var body = global.document.body,
+            html = global.document.documentElement;
+
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        if (height >= 1000) {
+            (global.DoubanAdSlots = global.DoubanAdSlots || []).push('dale_personal_note_bottom_super_banner');
+        }
+    })(this);
+</script>
+<!-- douban ad end -->
+
+
+        </div>
+    </div>
+</div>
+
+        
+<div id="footer">
+    
+
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2015 douban.com, all rights reserved
+</span>
+
+<a href="http://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="http://www.douban.com/about">关于豆瓣</a>
+    · <a href="http://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="http://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="http://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="http://www.douban.com/help/">帮助中心</a>
+    · <a href="http://developers.douban.com/" target="_blank">开发者</a>
+    · <a href="http://www.douban.com/mobile/">移动应用</a>
+    · <a href="http://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+
+</div>
+
+    </div>
+    <script type="text/javascript" src="http://s.doubanio.com/misc/mixed_static/728002a33eafb3e.js"></script>
+    
+    
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = 'http://erebor.douban.com/',
+            userId = '',
+            browserId = 'JZbWBcph32o',
+            ipAddress = '182.100.207.187',
+            criteria = '3:/note/482829682/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_personal_note_middle_right'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, ip: ipAddress, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'http://s.doubanio.com/f/shire/9a05c5455e63a8174be4fc85e713885c2a521c2a/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7019765-1']);
+_gaq.push(['_addOrganic', 'baidu', 'word']);
+_gaq.push(['_addOrganic', 'soso', 'w']);
+_gaq.push(['_addOrganic', '3721', 'name']);
+_gaq.push(['_addOrganic', 'youdao', 'q']);
+_gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+_gaq.push(['_addOrganic', 'vnet', 'kw']);
+_gaq.push(['_addOrganic', 'sogou', 'query']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣']);
+_gaq.push(['_addIgnoredOrganic', 'douban']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣网']);
+_gaq.push(['_addIgnoredOrganic', 'www.douban.com']);
+_gaq.push(['_setDomainName', '.douban.com']);
+
+
+    _gaq.push(['_setCustomVar', 1, 'responsive_view_mode', 'desktop', 3]); 
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+
+window._ga_init = function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+};
+if (window.addEventListener) {
+    window.addEventListener('load', _ga_init, false);
+} else {
+    window.attachEvent('onload', _ga_init);
+}
+</script>
+
+
+
+
+
+    <!-- sindar7d-->
+
+  <script>_SPLITTEST=''</script>
+
+<script>var _check_hijack = function () {
+    var _sig = "JZbWBcph", _login = false, bid = get_cookie('bid');
+    if (location.protocol != "file:" && (
+            typeof(bid) != "string" && _login ||
+            typeof(bid) == "string" && bid.substring(0,8) != _sig)) {
+        location.href += (/\?/.test(location.href)?"&":"?") + (
+                "_r=" + Math.random().toString(16).substring(2));
+    }};
+if (typeof(Do) != 'undefined') Do(_check_hijack);
+else if (typeof(get_cookie) != 'undefined') _check_hijack();
+</script></body>
+
+</html>
+
